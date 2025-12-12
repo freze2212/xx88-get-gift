@@ -1,0 +1,105 @@
+.main-background {
+  background-image: url('/bg-pc.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-background-mobile {
+  min-height: 100vh;
+}
+
+/* Breakpoints mobile custom */
+@media (max-width: 430px) {
+  .main-background-mobile {
+    min-height: 83vh;
+  }
+}
+
+@media (max-width: 414px) {
+  .main-background-mobile {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-background-mobile {
+    min-height: 75vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-background-mobile {
+    min-height: 72vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-background-mobile {
+    min-height: 70vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-background {
+    background-image: url('/bg-pc.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Custom radio button */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 174, 238, 0.3);
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.custom-radio:checked {
+  border-color: #00aeee;
+}
+
+.custom-radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00aeee;
+}
+
+@media (min-width: 640px) {
+  .custom-radio {
+    width: 17px;
+    height: 17px;
+  }
+  .custom-radio:checked::after {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-radio {
+    width: 18px;
+    height: 18px;
+  }
+  .custom-radio:checked::after {
+    width: 10px;
+    height: 10px;
+  }
+}
