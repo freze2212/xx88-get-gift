@@ -103,3 +103,20 @@
     height: 10px;
   }
 }
+
+/* Footer overlap fix for server */
+footer {
+  margin-top: -230px !important;
+}
+
+@media (min-width: 640px) {
+  footer {
+    margin-top: -230px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-top: -250px !important;
+  }
+}
