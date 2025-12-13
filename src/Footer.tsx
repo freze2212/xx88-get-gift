@@ -27,8 +27,8 @@ function Footer() {
   ]
 
   return (
-    <footer className="w-full -mt-[230px] sm:-mt-[230px] md:-mt-[250px] relative z-20 bg-white text-gray-800">
-      <div className="mx-auto flex w-full sm:w-11/12 md:w-8/12 flex-col gap-3 sm:gap-2 py-4 sm:py-5 md:py-6 px-4 sm:px-6 text-[11px] sm:text-[12px] md:text-[13px]">
+    <footer className="w-full -mt-[230px] sm:-mt-[230px] md:mt-[-100px] relative z-20 bg-white text-gray-800">
+      <div className="mx-auto flex w-full sm:w-11/12 md:w-9/12 flex-col gap-3 sm:gap-2 py-4 sm:py-5 md:py-6 px-4 sm:px-6 text-[11px] sm:text-[12px] md:text-[13px]">
         {/* Top - Ẩn trên mobile */}
          <div className="hidden md:flex w-full flex-row items-center justify-between gap-4">
           {/* Banner */}

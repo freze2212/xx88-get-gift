@@ -106,7 +106,7 @@ function App() {
     <>
       <div className="relative min-h-screen">
         <main
-          className="main-background main-background-mobile w-full flex items-start justify-center pt-16 sm:pt-12 md:pt-16 pb-[250px] sm:pb-[230px] md:pb-[250px] px-4 sm:px-6 md:px-8 relative z-10"
+          className="main-background main-background-mobile w-full flex items-start justify-center pt-16 sm:pt-12 md:pt-16 pb-[50px] sm:pb-[50px] md:pb-[80px] px-4 sm:px-6 md:px-8 relative z-10"
           aria-label="Landing background"
         >
         <div className="flex flex-col items-center gap-0 sm:gap-5 md:gap-6 w-full max-w-[340px]">
@@ -135,11 +135,11 @@ function App() {
                 <img
                   src="/vector-2.webp"
                   alt="Decorative vector 2"
-                  className="w-[220px] sm:w-[250px] md:w-[311.42px] h-auto object-contain md:mt-[-6px] mt-[-3px]"
+                  className="w-[194px] sm:w-[250px] md:w-[311.42px] h-auto object-contain md:mt-[-6px] mt-[-3px]"
                 />
                 <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                   <span
-                    className="mt-0 md:mt-[0rem] text-[14px] sm:text-[16px] md:text-[22.75px] font-black uppercase text-white text-center"
+                    className="mt-0 md:mt-[0rem] text-[12px] sm:text-[16px] md:text-[22.75px] font-black uppercase text-white text-center"
                     style={{
                       fontFamily:
                         'Roboto, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
@@ -154,22 +154,22 @@ function App() {
             {/* Form card như mock */}
             <form
               onSubmit={handleSubmit}
-              className="absolute bottom-[10px] sm:bottom-[24px] md:bottom-[15px] w-[calc(100%-40px)] sm:w-[360px] md:w-[420px] max-w-[420px] rounded-[18px] sm:rounded-[24px] md:rounded-[28px] px-0 sm:px-6 md:px-8 py-0 sm:py-5 md:py-7 text-[14px] sm:text-[15px] md:text-[17px] text-[#082047] scale-90 sm:scale-100 origin-bottom"
+              className="absolute bottom-[18px] sm:bottom-[24px] md:bottom-[15px] w-[calc(100%-40px)] sm:w-[360px] md:w-[420px] max-w-[420px] rounded-[18px] sm:rounded-[24px] md:rounded-[28px] px-0 sm:px-6 md:px-8 py-0 sm:py-5 md:py-7 text-[13px] sm:text-[15px] md:text-[17px] text-[#082047] scale-[1] sm:scale-100 origin-bottom"
             >
-                <div className="space-y-3 sm:space-y-4 md:space-y-5">
+              <div className="space-y-3 sm:space-y-4 md:space-y-5">
                 <div className="space-y-1.5 sm:space-y-2">
-                  <label className="text-[16px] sm:text-[16px] md:text-[18px] font-semibold">Tài khoản</label>
+                  <label className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold">Tài khoản</label>
                   <input
                     type="text"
                     placeholder="Nhập tài khoản của bạn"
-                    className="w-full rounded-xl border border-[#d9e2ff] bg-white px-3 sm:px-4 py-2.5 sm:py-3 md:py-3.5 text-[16px] sm:text-[16px] md:text-[18px] outline-none placeholder:text-[#9caac7] focus:border-[#4a8bff] focus:ring-0"
+                    className="w-full rounded-xl border border-[#d9e2ff] bg-white px-3 sm:px-4 py-2.5 sm:py-3 md:py-3.5 text-[14px] sm:text-[16px] md:text-[18px] outline-none placeholder:text-[#9caac7] focus:border-[#4a8bff] focus:ring-0"
                     value={accountId}
                     onChange={(e) => setAccountId(e.target.value)}
                   />
                 </div>
 
                 <div className="space-y-1.5 sm:space-y-2">
-                  <label className="text-[16px] sm:text-[16px] md:text-[18px] font-semibold">
+                  <label className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold">
                     4 số cuối tài khoản ngân hàng
                   </label>
                   <div className="flex gap-2 sm:gap-3 md:gap-4">
@@ -185,15 +185,15 @@ function App() {
                         value={bankDigits[index]}
                         onChange={(event) => handleDigitChange(index, event.target.value)}
                         onKeyDown={(event) => handleDigitKeyDown(index, event)}
-                        className="h-11 sm:h-11 md:h-12 w-11 sm:w-11 md:w-12 rounded-[10px] sm:rounded-[11px] md:rounded-[12px] border border-[#d9e2ff] bg-white text-center text-[18px] sm:text-[18px] md:text-[21px] font-semibold outline-none focus:border-[#4a8bff]"
+                        className="h-10 sm:h-11 md:h-12 w-10 sm:w-11 md:w-12 rounded-[10px] sm:rounded-[11px] md:rounded-[12px] border border-[#d9e2ff] bg-white text-center text-[16px] sm:text-[18px] md:text-[21px] font-semibold outline-none focus:border-[#4a8bff]"
                       />
                     ))}
                   </div>
                 </div>
 
                 <div className="space-y-1.5 sm:space-y-2">
-                  <p className="text-[16px] sm:text-[16px] md:text-[18px] font-semibold">Lựa chọn tham gia sự kiện</p>
-                  <div className="space-y-1.5 sm:space-y-2 text-[15px] sm:text-[15px] md:text-[17px]">
+                  <p className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold">Lựa chọn tham gia sự kiện</p>
+                  <div className="space-y-1.5 sm:space-y-2 text-[13px] sm:text-[15px] md:text-[17px]">
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input
                         type="radio"
