@@ -19,7 +19,7 @@ function StatusModal({ type, message, onClose }: StatusModalProps) {
         <button
           type="button"
           onClick={onClose}
-          className="mt-6 w-full rounded-full bg-gradient-to-b from-[#4aa3ff] to-[#0053c7] py-3 text-[16px] font-semibold text-white shadow-[0_12px_30px_rgba(0,74,163,0.4)]"
+          className="mt-3 w-full rounded-full bg-gradient-to-b from-[rgba(0,174,238,0.2)] to-[#00aeee] py-3 text-[16px] font-semibold text-[#fff]"
         >
           Xác Nhận
         </button>
